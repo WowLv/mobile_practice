@@ -1,0 +1,48 @@
+@font-face {font-family: "iconfont";
+  src: url('~@/styles/iconfont.ttf')
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e65c";
+}
+
+.icon-home_light:before {
+  content: "\e7d4";
+}
+
+.icon-my_light:before {
+  content: "\e7d5";
+}
+
+.icon-cart_light:before {
+  content: "\e7d6";
+}
+
+.icon-home_fill_light:before {
+  content: "\e7d8";
+}
+
+.icon-cart_fill_light:before {
+  content: "\e7d9";
+}
+
+.icon-my_fill_light:before {
+  content: "\e7da";
+}
+
+.icon-more_light:before {
+  content: "\e7e3";
+}
+
+.icon-form_light:before {
+  content: "\e7e8";
+}
+
