@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="all-step" id="all-step">
-      <div class="curr-step" id="curr-step" ref="currStep"></div>
+      <div class="curr-step" id="curr-step" ref="currSteps"></div>
     </div>
   </div>
 </template>
@@ -25,7 +25,7 @@ export default class StepBar extends Vue {
     const currStepWidth: number = parseInt(
       window.getComputedStyle(currStep, null).width.replace("px", "")
     );
-    this.$refs.currStep.style.left =
+    (this.$refs.currSteps as HTMLDivElement).style.left =
       newVal * (allStepWidth - currStepWidth) + "px";
   }
 }

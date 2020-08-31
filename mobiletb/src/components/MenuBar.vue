@@ -113,7 +113,7 @@ export default class NavBar extends Vue {
   private moveWidth = 0;
   mounted() {
     const myMenu: any = document.getElementById('menu')
-    myMenu.addEventListener('scroll', (e:object) => {
+    myMenu.addEventListener('scroll', (e:any) => {
       this.moveWidth = e.target.scrollLeft / (e.target.scrollWidth - e.target.clientWidth)
     })
   }

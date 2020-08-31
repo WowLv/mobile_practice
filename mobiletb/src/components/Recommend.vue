@@ -174,7 +174,12 @@
       </div>
       <div class="notice-bar">
         <van-notice-bar :scrollable="false" background="#ffffff">
-          <van-swipe vertical class="notice-swipe" :autoplay="3000" :show-indicators="false">
+          <van-swipe
+            vertical
+            class="notice-swipe"
+            :autoplay="3000"
+            :show-indicators="false"
+          >
             <van-swipe-item class="swipe-item">
               <div class="type-tag">摄影</div>
               <div class="_text">1分钟 |轻松解决8个手机摄影技巧</div>
@@ -248,7 +253,7 @@ export default class Recommend extends Vue {}
         background-image: url("https://gw.alicdn.com/tfs/TB1Cbq1mrj1gK0jSZFuXXcrHpXa-525-60.png?getAvatar=1_360x360q90_.webp");
       }
       .title-sp {
-          background-image: url("https://gw.alicdn.com/tfs/TB1jkazoAL0gK0jSZFAXXcA9pXa-525-60.png?getAvatar=1_360x360q90_.webp");
+        background-image: url("https://gw.alicdn.com/tfs/TB1jkazoAL0gK0jSZFAXXcA9pXa-525-60.png?getAvatar=1_360x360q90_.webp");
       }
     }
     ._left,
@@ -372,15 +377,18 @@ export default class Recommend extends Vue {}
     background-color: #ffffff;
     height: 40px;
     border-bottom-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
     position: relative;
     .bottom-title {
+      overflow: hidden;
+      position: absolute;
       display: flex;
       height: 20px;
+      top: 10px;
       width: 64px;
       margin-left: 12px;
       ._text {
-        margin-top: 10px;
+        position: absolute;
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
